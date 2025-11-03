@@ -1,0 +1,172 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Corpo */
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #0a0a0a;
+    color: #fff;
+    line-height: 1.6;
+}
+
+/* Cabeçalho */
+header {
+    background-color: #111;
+    padding: 20px 0;
+    border-bottom: 2px solid #ff003c;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    margin: auto;
+}
+
+header h1 {
+    font-size: 1.8rem;
+    color: #ff003c;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #fff;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    color: #ff003c;
+}
+
+/* Hero section */
+#hero {
+    height: 70vh;
+    background: linear-gradient(135deg, #ff003c, #1a1a1a);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.hero-content {
+    background: rgba(0, 0, 0, 0.5);
+    padding: 40px;
+    border-radius: 10px;
+    max-width: 600px;
+}
+
+.hero-content h2 {
+    font-size: 2.5rem;
+    margin-bottom: 15px;
+}
+
+.hero-content p {
+    margin-bottom: 20px;
+    color: #ddd;
+}
+
+.btn {
+    display: inline-block;
+    background-color: #ff003c;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background 0.3s;
+}
+
+.btn:hover {
+    background-color: #e60035;
+}
+
+/* Sessões */
+.container {
+    width: 90%;
+    margin: 60px auto;
+}
+
+h2 {
+    color: #ff003c;
+    margin-bottom: 15px;
+    border-bottom: 2px solid #ff003c;
+    display: inline-block;
+    padding-bottom: 5px;
+}
+
+/* Sobre */
+#sobre p {
+    color: #ccc;
+    margin-top: 10px;
+    font-size: 1.1rem;
+}
+
+/* Músicas */
+.musicas-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.musica {
+    background: #1a1a1a;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    border: 1px solid #2a2a2a;
+    transition: transform 0.2s, background 0.3s;
+}
+
+.musica:hover {
+    transform: translateY(-5px);
+    background: #222;
+}
+
+/* Rodapé */
+footer {
+    background-color: #111;
+    text-align: center;
+    padding: 20px 0;
+    border-top: 2px solid #ff003c;
+}
+
+footer a {
+    color: #ff003c;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+/* Responsivo */
+@media (max-width: 600px) {
+    header .container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    #hero {
+        height: 60vh;
+        padding: 30px;
+    }
+
+    .hero-content h2 {
+        font-size: 1.8rem;
+    }
+
+    .hero-content p {
+        font-size: 1rem;
+    }
+}
